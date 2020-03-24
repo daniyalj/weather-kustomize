@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: weather-ingress
+  labels:
+    app: weather
+spec:
+  rules:
+    - host: weather.example.com
+      http:
+        paths:
+          - backend:
+              serviceName: weather  # name of the frontend Service
+              servicePort: 8080
+
