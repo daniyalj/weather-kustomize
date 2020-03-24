@@ -5,6 +5,6 @@ bases:
 patches:
 - deployment.yaml
 images:
-- name: weather
+- name: docker.io/daniyalj/weather
   newName: docker.io/alpine
   newTag: "3.6"
